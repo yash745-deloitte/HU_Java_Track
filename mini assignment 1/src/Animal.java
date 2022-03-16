@@ -3,6 +3,7 @@ public class Animal {
     public static void main(String[] args) {
         Animals Whale = new Animals();
         Animals cow = new Animals();
+        Animals Dog = new Animals();
 
 
         Whale.setName("PET");
@@ -13,7 +14,13 @@ public class Animal {
         cow.setLegs(4);
         cow.setWeight(80);
 
-        System.out.println(Whale.getName()  + "has got "+ Whale.getLegs() + " and has "+ Whale.getWeight() + " weight.");
+        Dog.setName("Browny");
+        Dog.setLegs(4);
+        Dog.setWeight(25);
+
+        System.out.println(Whale.getName()  + " has got "+ Whale.getLegs() + " and has "+ Whale.getWeight() + " weight.");
+        System.out.println(cow.getName()  + " has got "+ cow.getLegs() + " and has "+ cow.getWeight() + " weight.");
+        System.out.println(Dog.getName()  + " has got "+ Dog.getLegs() + " and has "+ Dog.getWeight() + " weight.");
     }
 }
 
