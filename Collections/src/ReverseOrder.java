@@ -1,26 +1,27 @@
 import java.util.*;
 public class ReverseOrder {
 
-        public static void main(String[] args)
-        {
-            Scanner scan = new Scanner(System.in);
-            System.out.println("Enter Original String:-");
-            String Original = scan.nextLine();
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter size of list:");
+        int n = scan.nextInt() + 1;
+        String[] str = new String[n];
 
-
-            List<String> mylist = new ArrayList<>(Arrays.asList(Original.split(",")));
-
-
-
-
-            System.out.println("Original List : " + mylist);
-
-
-            Collections.reverse(mylist);
-
-
-            System.out.println("Modified List: " + mylist);
-
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter Element of list:");
+            str[i] = scan.nextLine();
         }
+        Stack<String> stack = new Stack<>();
+
+        for (int i = 0; i < n; i++) {
+            stack.push(str[i]);
+        }
+
+        while (!stack.empty()) {
+            System.out.println(stack.pop());
+        }
+
+
     }
+}
 
