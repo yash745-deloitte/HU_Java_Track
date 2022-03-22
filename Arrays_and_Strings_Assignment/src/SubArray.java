@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class SubArray {
 
-    int count=0;
+    static int count=0;
 
-    boolean sum(int []arr, int n,int sum){
+    static boolean sum(int []arr, int n,int sum){
         if(sum < 0) {
             count++;
             return true;
